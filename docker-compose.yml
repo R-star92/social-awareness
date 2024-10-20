@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  api:
+    image: hack-the-crisis-api
+    build:
+      context: .
+      dockerfile: CommunicationApi/Dockerfile
+
+  portal:
+    image: hack-the-crisis-portal
+    build:
+      context: .
+      dockerfile: Hack_The_Crisis/Dockerfile
+
